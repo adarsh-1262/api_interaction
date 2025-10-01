@@ -1,16 +1,17 @@
-# React + Vite
+# API Interaction Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend application for interacting with a document management and chat API.
 
-Currently, two official plugins are available:
+## Pages and Routes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### `/` - Upload Page
+Upload files to create document collections. Select a file and upload it to the "Resume" collection.
 
-## React Compiler
+### `/chat` - Chat Page  
+Chat interface to ask questions about uploaded documents using natural language queries.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### `/collections` - Collections Page
+View and manage document collections. See collection details and delete collections as needed.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Health Monitoring
+API health status is displayed in the footer across all pages with real-time monitoring.
